@@ -2,13 +2,13 @@
  
  ![image](result.png)
 Created with the NEAT module, the AI only has two outputs: moving up or down.
-The AI considers five inputs:
+The neural-netowrk considers five inputs:
 * the y positions of the paddles 
 * y position of the pong 
 * velocity of the pong  
 * the direction of the pong
 
-we get 2 outputs from the neural-network where the AI-player is instructed to either move up or down. 
+it will then give 2 outputs from the neural-network where the AI-player is instructed to either move up or down. 
 ## Evolution
   
 We assess the fitness of the genomes with a few factors: their score and how long they stayed alive. Their fitnesses are also reduced if they stay idle when the pong is heading their way in order to encourage them to move around. We were then able to acquire a genome that satisfied the fitness threshold after 22 generations, with 50 players each.
