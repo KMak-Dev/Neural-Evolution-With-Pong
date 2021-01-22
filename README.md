@@ -13,4 +13,4 @@ The most recent genome with the highest fitness is saved as `saved_genome.pkl`. 
 
 ## Evolving your genome
   
-Should you wish to train your own version of the AI and save it, change “training_mode” to True in `main.py` and run. The best genome will be saved to `empty_genome.pkl`.
+Should you wish to train your own version of the AI and save it, set `training_mode` to True in `main.py` and run. The best genome will be saved to `empty_genome.pkl`.
