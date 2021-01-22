@@ -1,5 +1,5 @@
 **Pong-AI**:\
- <img src="result.png" width="600">
+ <img src="result.png" width="600">\
   Created with the NEAT module, the AI only has two outputs: moving up or down.
 By giving it 5 inputs: the y positions of the paddles, y position of the pong, velocity of the pong and the direction of the pong, we get 2 outputs from the neural-network where the AI-player is instructed to either move up or down. 
 
