@@ -3,10 +3,11 @@
  ![image](result.png)
 Created with the NEAT module, the AI only has two outputs: moving up or down.\
 The AI considers five inputs:
-*the y positions of the paddles 
-*y position of the pong 
-*velocity of the pong  
-*the direction of the pong
+* the y positions of the paddles 
+* y position of the pong 
+* velocity of the pong  
+* the direction of the pong
+
 we get 2 outputs from the neural-network where the AI-player is instructed to either move up or down. 
 ## Evolution
   
