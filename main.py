@@ -17,7 +17,6 @@ colors = [cyan]
 # Screen settings
 HEIGHT = 600
 WIDTH = 1200
-running = True
 screen = pygame.display.set_mode((WIDTH, HEIGHT))
 pygame.display.set_caption(" Pong - With AI !")
 pygame.display.set_icon(icon)
@@ -36,7 +35,6 @@ class Paddle:
         self.width = 20
         self.x = x
         self.y = y
-        self.direction = 2
         self.velocity = 25
         # the y positions of pads in the previous frame
         self.prevL = 0
@@ -171,19 +169,19 @@ def move_pongs(players, genomes):
                 ran = random.choice(bounce)
                 if ran == 0 and not training_mode:
                     if players[i].ball.velocityY > 0:
-                        players[i].ball.velocityY = 2
+                        players[i].ball.velocityY = 5
                     else:
-                        players[i].ball.velocityY = -2
+                        players[i].ball.velocityY = -5
                 elif ran == 1 and not training_mode:
                     if players[i].ball.velocityY > 0:
-                        players[i].ball.velocityY = 9
+                        players[i].ball.velocityY =7
                     else:
-                        players[i].ball.velocityY = -9
+                        players[i].ball.velocityY = -7
                 elif ran == 2 and not training_mode:
                     if players[i].ball.velocityY > 0:
-                        players[i].ball.velocityY = 9
+                        players[i].ball.velocityY = 7
                     else:
-                        players[i].ball.velocityY = -9
+                        players[i].ball.velocityY = -7
                 elif ran == 3 and not training_mode:
                     if players[i].ball.velocityY > 0:
                         players[i].ball.velocityY = 11
@@ -191,9 +189,9 @@ def move_pongs(players, genomes):
                         players[i].ball.velocityY = -11
                 elif ran == 4 and not training_mode:
                     if players[i].ball.velocityY > 0:
-                        players[i].ball.velocityY = 17
+                        players[i].ball.velocityY = 26
                     else:
-                        players[i].ball.velocityY = -17
+                        players[i].ball.velocityY = -26
                 players[i].ball.velocityX = -players[i].ball.velocityX
             # if pong is out of bound
             if players[i].ball.x > WIDTH + players[i].ball.width or players[i].ball.x < 0 - players[i].ball.width:
