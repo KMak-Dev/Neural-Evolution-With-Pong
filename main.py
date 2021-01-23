@@ -169,29 +169,29 @@ def move_pongs(players, genomes):
                 ran = random.choice(bounce)
                 if ran == 0 and not training_mode:
                     if players[i].ball.velocityY > 0:
-                        players[i].ball.velocityY = 5
+                        players[i].ball.velocityY = 3
                     else:
-                        players[i].ball.velocityY = -5
+                        players[i].ball.velocityY = -3
                 elif ran == 1 and not training_mode:
                     if players[i].ball.velocityY > 0:
-                        players[i].ball.velocityY =7
+                        players[i].ball.velocityY = 8
                     else:
-                        players[i].ball.velocityY = -7
+                        players[i].ball.velocityY = -8
                 elif ran == 2 and not training_mode:
                     if players[i].ball.velocityY > 0:
-                        players[i].ball.velocityY = 7
+                        players[i].ball.velocityY = 8
                     else:
-                        players[i].ball.velocityY = -7
+                        players[i].ball.velocityY = -8
                 elif ran == 3 and not training_mode:
                     if players[i].ball.velocityY > 0:
-                        players[i].ball.velocityY = 11
+                        players[i].ball.velocityY = 17
                     else:
-                        players[i].ball.velocityY = -11
+                        players[i].ball.velocityY = -17
                 elif ran == 4 and not training_mode:
                     if players[i].ball.velocityY > 0:
-                        players[i].ball.velocityY = 26
+                        players[i].ball.velocityY = 24
                     else:
-                        players[i].ball.velocityY = -26
+                        players[i].ball.velocityY = -24
                 players[i].ball.velocityX = -players[i].ball.velocityX
             # if pong is out of bound
             if players[i].ball.x > WIDTH + players[i].ball.width or players[i].ball.x < 0 - players[i].ball.width:
