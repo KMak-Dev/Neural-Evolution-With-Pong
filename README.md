@@ -9,7 +9,7 @@ The neural-network first considers five inputs:
 * velocity of the pong  
 * the direction of the pong
 
-it will then give 2 outputs from the neural-network where the AI-player is instructed to either move the paddles up or down. 
+it will then give an output from the neural-network where the AI-player is instructed to either move the paddles up or down. 
 ## Evolution
   
 We assess the fitness of the genomes with a few factors: their score and how long they stayed alive. Their fitnesses are also reduced if they stay idle when the pong is heading their way in order to encourage them to move around. We acquired a genome that satisfied the fitness threshold after 11 generations, with 30 players each.
